@@ -1,0 +1,39 @@
+{
+  "buildCommand": "npm install && npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nodejs",
+  "nodeVersion": "20.x",
+  "env": [
+    {
+      "key": "MONGODB_URI",
+      "value": "",
+      "type": "secret",
+      "description": "MongoDB connection string (get free from mongodb.com/cloud/atlas)"
+    },
+    {
+      "key": "EMAIL_USER",
+      "value": "",
+      "type": "secret",
+      "description": "Gmail email address (jmcsbusinesss@gmail.com)"
+    },
+    {
+      "key": "EMAIL_PASSWORD",
+      "value": "",
+      "type": "secret",
+      "description": "Gmail App Password (generate from Google Account Security)"
+    },
+    {
+      "key": "ANTHROPIC_API_KEY",
+      "value": "",
+      "type": "secret",
+      "description": "Your Anthropic API key"
+    },
+    {
+      "key": "SLACK_WEBHOOK",
+      "value": "",
+      "type": "secret",
+      "description": "Optional: Slack webhook for notifications"
+    }
+  ]
+}
